@@ -17,7 +17,7 @@ defmodule DemoWeb.Router do
   scope "/", DemoWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    live "/", ClockLive
   end
 
   # Other scopes may use custom stacks.
